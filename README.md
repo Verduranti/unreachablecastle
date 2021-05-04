@@ -1,18 +1,18 @@
-# 11ty-bs5-starter
+# Unreachable Castle
 
-Bootstrap 5 starter for [11ty](https://www.11ty.dev/). Developed with rapid prototyping, easy customization/theming and fast loading times in mind.
+Simple landing page static site built on Bootstrap 5 and 11ty
 
-## Documentations
+## External Documentation
 - [11ty Static Site Generator](https://www.11ty.dev/docs/)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
 - [Parcel.js](https://parceljs.org/getting_started.html)
 - [PurgeCSS](https://purgecss.com/)
 
-## How to get started
+## How to run site
 
 ### 1. Clone the repository
-```git clone https://github.com/THoenig/11ty-bs5-starter.git your-project-name```
+```git clone https://github.com/Verduranti/unreachablecastle.git your-project-name```
 
 ### 2. cd into project directory
 ```cd your-project-name```
@@ -30,6 +30,7 @@ Then visit [http://localhost:8080](http://localhost:8080).
 
 This will minify HTML, CSS and JS and purge unused styles.
 
+# Documentation from original fork
 ## Differences from 11ty default config
 While I want to keep things as default as possible, I decided to change the following:
 

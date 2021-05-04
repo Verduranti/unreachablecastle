@@ -1,15 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">{{ site.name }}</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarNav">
-    <ul class="navbar-nav">
+<nav class="nav nav-masthead justify-content-center float-md-end">
       {% for item in menus.main %}
-        <li class="nav-item">
-          <a href="{{ item.url }}" class="nav-link link-light" {{ 'aria-current=page' if page.url == item.url }}>{{ item.name }}</a>
-        </li>
+         <a href="{{ item.url }}"
+         {% if page.url == item.url %} class="nav-link active" aria-current="page"
+         {% else %} class="nav-link"
+         {% endif %}>{{ item.name }}</a>
       {% endfor %}
-    </ul>
-  </div>
 </nav>

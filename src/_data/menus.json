@@ -6,7 +6,11 @@
     },
     {
       "name": "Github",
-      "url": "https://github.com/THoenig/11ty-bs5-starter/"
+      "url": "https://github.com/Verduranti/unreachablecastle"
+    },
+    {
+      "name": "404Test",
+      "url": "/willnotwork"
     }
   ]
 }
