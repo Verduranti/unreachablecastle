@@ -1,4 +1,6 @@
+{% if text %}
 <a href="{{ button_href }}"
 class="btn btn-lg btn-secondary fw-bold border-white bg-white">
 {{- text | safe -}}
 </a>
+{% endif %}
