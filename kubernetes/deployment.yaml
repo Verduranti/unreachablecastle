@@ -205,7 +205,7 @@ metadata:
   name: unreachable-castle-service
   namespace: default
 spec:
-  clusterIP: 10.44.15.103
+  clusterIP: 10.96.15.103
   externalTrafficPolicy: Cluster
   ports:
     - nodePort: 30740
