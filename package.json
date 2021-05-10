@@ -1,28 +1,28 @@
 {
-  "name": "11ty-bootstrap5",
+  "name": "unreachablecastle",
   "version": "1.0.0",
-  "description": "Minimal 11ty starter with Bootstrap 5 (beta1) and Parcel",
+  "description": "Minimal 11ty website with Bootstrap 5 and Parcel. Dockerized.",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development run-p watch:*",
-    "build": "cross-env NODE_ENV=production npm-run-all clean --parallel build:* --serial purgecss",
+    "start": "NODE_ENV=development run-p watch:*",
+    "build": "NODE_ENV=production npm-run-all clean --parallel build:* --serial purgecss",
     "build:eleventy": "eleventy",
     "build:parcel": "parcel build parcel.js -d ./public/_assets -o main --public-url '/_assets' --no-source-maps",
     "clean": "rimraf public/ .cache/",
-    "debug": "cross-env DEBUG=Eleventy* NODE_ENV=development run-s start",
+    "debug": "DEBUG=Eleventy* NODE_ENV=development run-s start",
     "purgecss": "npx purgecss -c ./purgecss.config.js",
     "watch:eleventy": "eleventy --serve",
     "watch:parcel": "parcel watch parcel.js -d ./public/_assets -o main --public-url '/_assets'"
   },
   "keywords": [],
-  "author": "Thomas Hönig",
+  "author": "Verduranti",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/THoenig/11ty-bs5-starter"
+    "url": "https://github.com/Verduranti/unreachablecastle"
   },
   "bugs": {
-    "url": "https://github.com/THoenig/11ty-bs5-starter/issues"
+    "url": "https://github.com/Verduranti/unreachablecastle/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
@@ -33,7 +33,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^5.0.0-beta1",
-    "cross-env": "^7.0.3",
     "html-minifier": "^4.0.0",
     "markdown-it": "^12.0.4",
     "markdown-it-attrs": "^4.0.0",
