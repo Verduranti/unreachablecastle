@@ -8,9 +8,9 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-      - run: npm ci
       - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
