@@ -2,6 +2,11 @@
 
 Simple landing page static site built on Bootstrap 5 and 11ty
 
+The following files can be deleted if not hosting on kubernetes:
+- /kubernetes/*
+- Dockerfile
+
+
 ## External Documentation
 - [11ty Static Site Generator](https://www.11ty.dev/docs/)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
