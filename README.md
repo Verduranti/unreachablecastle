@@ -11,7 +11,7 @@ The following files can be deleted if not hosting on kubernetes:
 - [11ty Static Site Generator](https://www.11ty.dev/docs/)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
-- [Parcel.js](https://parceljs.org/getting_started.html)
+- [Parcel.js](https://v2.parceljs.org/)
 - [PurgeCSS](https://purgecss.com/)
 
 ## How to run site
