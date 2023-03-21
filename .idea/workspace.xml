@@ -4,102 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a5f3f2-81f1-4bde-9b33-4e687b5496c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/commit-msg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lint-staged.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/DeanYellow.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/facebook-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image-post7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/linkedin-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/project-fire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/project-maps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/project-web-design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/twitter-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/youtube-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GradientText.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HeroAvatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavbarTwoColumns.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Project.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/random.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/[...page].astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/fifth-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/first-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/forth-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/hello-world.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/sixth-post.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rss.xml.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/BlogPost.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/CTA.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/ProjectList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/RecentPosts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Base.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/BasePost.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/AppConfig.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Posts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unreachablecastle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eleventyignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes/deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parcel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/purgecss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/404.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_assets/js/_bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_assets/js/_firebase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_assets/scss/_bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_assets/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_data/env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_data/layout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_data/menus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_data/site.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/base.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/button.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/footer.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/head.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/header.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/navigation-main.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/lost-lennart-wittstock.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/night-sky-eberhard-grossgasteiger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src.11tydata.js" beforeDir="false" />
-    </list>
+    <list default="true" id="89a5f3f2-81f1-4bde-9b33-4e687b5496c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +62,7 @@
       <updated>1678234540750</updated>
       <workItem from="1678234542665" duration="4464000" />
       <workItem from="1678524113916" duration="255000" />
-      <workItem from="1679360940873" duration="17107000" />
+      <workItem from="1679360940873" duration="17447000" />
     </task>
     <servers />
   </component>
