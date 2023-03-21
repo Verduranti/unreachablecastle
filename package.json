@@ -1,50 +1,57 @@
 {
-  "name": "unreachablecastle",
+  "name": "",
   "version": "1.0.0",
-  "description": "Minimal 11ty website with Bootstrap 5 and Parcel. Dockerized.",
-  "private": true,
   "scripts": {
-    "start": "NODE_ENV=development run-p watch:*",
-    "build": "NODE_ENV=production npm-run-all clean --parallel build:* --serial purgecss",
-    "build:eleventy": "eleventy",
-    "build:parcel": "parcel build parcel.js --dist-dir ./public/_assets --public-url '/_assets' --no-source-maps",
-    "clean": "rimraf public/ .cache/",
-    "debug": "DEBUG=Eleventy* NODE_ENV=development run-s start",
-    "purgecss": "npx purgecss -c ./purgecss.config.js",
-    "watch:eleventy": "eleventy --serve",
-    "watch:parcel": "parcel watch parcel.js --dist-dir ./public/_assets --public-url '/_assets'"
-  },
-  "default": "main",
-  "keywords": [],
-  "author": "Verduranti",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Verduranti/unreachablecastle"
-  },
-  "bugs": {
-    "url": "https://github.com/Verduranti/unreachablecastle/issues"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "clean": "rimraf dist",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro .",
+    "build-types": "tsc --noEmit --pretty",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "@popperjs/core": "^2.6.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "bootstrap": "^5.0.0-beta1",
-    "html-minifier": "^4.0.0",
-    "markdown-it": "^12.0.4",
-    "markdown-it-attrs": "^4.0.0",
-    "npm-run-all": "^4.1.5",
-    "parcel": "^2.0.0-beta.2",
-    "purgecss": "^4.0.0",
+    "@astrojs/react": "^0.1.3",
+    "@astrojs/rss": "^0.2.2",
+    "@astrojs/sitemap": "^0.1.2",
+    "@astrojs/tailwind": "^0.2.5",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/react": "^18.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "astro": "^1.7.2",
+    "astro-eslint-parser": "^0.2.2",
+    "astro-imagetools": "^0.6.17",
+    "astro-robots-txt": "^0.3.2",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwindcss": "^3.5.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-astro": "^0.1.0-next.5",
     "rimraf": "^3.0.2",
-    "scss": "^0.2.4"
+    "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "firebase": "^8.6.1"
-  }
+    "astro-boilerplate-components": "^1.0.8",
+    "date-fns": "^2.28.0"
+  },
+  "volta": {
+    "node": "16.15.1"
+  },
+  "author": "Ixartz (https://github.com/ixartz)"
 }

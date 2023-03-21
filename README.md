@@ -1,137 +1,130 @@
-# Unreachable Castle
+# Astro Boilerplate with TypeScript and Tailwind CSS [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
-Simple landing page static site built on Bootstrap 5 and 11ty
+🚀 Astro Boilerplate is starter code for your blog or portfolio based on Astro
+with Tailwind CSS 3.0. ⚡️ Made with Astro, TypeScript, ESLint, Prettier,
+Tailwind CSS.
 
-The following files can be deleted if not hosting on kubernetes:
-- /kubernetes/*
-- Dockerfile
+Clone this project and use it to create your own Astro blog. You can check the
+[Astro templates demo](https://creativedesignsguru.com/demo/astro-boilerplate/).
 
+## Features
 
-## External Documentation
-- [11ty Static Site Generator](https://www.11ty.dev/docs/)
-- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
-- [Parcel.js](https://v2.parceljs.org/)
-- [PurgeCSS](https://purgecss.com/)
+A complete Blog feature:
 
-## How to run site
+- 🎈 Syntax Highlighting
+- 🤖 SEO friendly with sitemap.xml and robots.txt
+- ⚙️ RSS feed
+- 📖 Pagination
+- 🌈 Include a dark blog theme
+- ⬇️ Markdown
+- 📦 Image lazy loading
+- 💎 Responsive design
 
-### 1. Clone the repository
-```git clone https://github.com/Verduranti/unreachablecastle.git your-project-name```
+Developer experience first:
 
-### 2. cd into project directory
-```cd your-project-name```
+- 🔥 Astro
+- 🎨 Tailwind CSS with aspect ratio and typography plugin
+- 🎉 TypeScript
+- ✏️ ESLint compatible with .astro files
+- 🛠 Prettier compatible with .astro files
+- 🦊 Husky
+- 🚫 lint-staged
+- 🚨 Commitlint
+- 🔧 One-click deploy on Netlify (or, manual if you prefer)
 
-### 3. Install dependencies
-```npm install```
+ESLint with:
 
-### 4. Run
-```npm start```
+- Airbnb styled guide
+- TypeScript compatible
+- Astro compatible
+- Automatically remove unused imports
+- Import sorting
+- Tailwind CSS plugin
 
-Then visit [http://localhost:8080](http://localhost:8080).
+### Philosophy
 
-## Building for production
-```npm run build```
+- Minimal code
+- SEO-friendly
+- 🚀 Production-ready
 
-This will minify HTML, CSS and JS and purge unused styles.
+### Requirements
 
-# Documentation from original fork
-## Differences from 11ty default config
-While I want to keep things as default as possible, I decided to change the following:
+- Node.js and npm
 
-### [Input](https://www.11ty.dev/docs/config/#input-directory)/[Output](https://www.11ty.dev/docs/config/#output-directory) folders:
-``` javascript
-  config.dir = {
-    input: './src',
-    output: "./public"
-  }
-```
-To separate configuration, actual source and output.
+#### Optional
 
-### [setDataDeepMerge(true)](https://www.11ty.dev/docs/data-deep-merge/)
-For me, it just feels like this should be the default.
+- [nvm](https://github.com/nvm-sh/nvm)
+- [volta](https://volta.sh/)
 
-### [setTemplateFormats](https://www.11ty.dev/docs/config/#template-formats)
+While Astro-boilerplate should work with the latest Node version, it has been
+tested with the versions in .nvmrc & the bottom of package.json. At current
+writing, that's Node v16.15.1
 
-``` javascript
-  config.setTemplateFormats([
-    'njk',
-    'md',
-    'jpg',
-    'png',
-    'svg',
-    // 'liquid',
-    // 'pug',
-    // 'ejs',
-    // 'hbs',
-    // 'mustache',
-    // 'haml',
-    // '11ty.js',
-  ])
-```
+### Getting started
 
-### [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
-I like it, so I added it.
+Run the following command on your local environment:
 
-### Add htmlmin [transform](https://www.11ty.dev/docs/config/#transforms)
-Minify HTML if NODE_ENV is set to 'production'.
-
-### Ignore files and folders that start with '__' (double underscore)
-11ty parses Liquid in markdown. This is great, because this enables you to include custom Liquid/HTML in your markdown or split your content up. To prevent 11ty to create a new output folder, just use the double underscore.
-
-**Example**:
-``` markdown
-# Hi
-This is content part 1.
-
-{% include ./__content-part-2.md %}
+``` bash
+git clone --depth=1 https://github.com/ixartz/Astro-boilerplate
+cd my-project-name
+npm install
 ```
 
-## Customization
+Then, you can run locally in development mode with live reload:
 
-By default, all styles and JS modules are activated. Deactivate the components you don't need to reduce file sizes and increase overall performance.
-
-The entry point for all assets is ```parcel.js```. Nothing much to see here, in fact this is the whole content:
-
-``` javascript
-import "./src/_assets/scss/main.scss"
-import "./src/_assets/js/main.js"
+``` bash
+npm run dev
 ```
 
-Use the respective ```main.{scss,js}``` files to import stuff and extend to your liking.
+Open [http://localhost:3000](http://localhost:3000) with your favorite browser
+to see your project.
 
-### SCSS
-**Entry point:** ```src/_assets/scss/main.scss```.
+### Deploy to production (manual)
 
-In ```src/_assets/scss/_bootstrap.scss``` you can theme Bootstrap and (de-)activate Bootstrap modules. Further information on this topic in the Bootstrap docs about [SCSS customization](https://getbootstrap.com/docs/5.0/customize/sass/)
+You can create an optimized production build with:
 
-### JS
-**Entry point:** ```src/_assets/js/main.js```. 
-
-Bootstrap imports are located in ```src/_assets/js/_bootstrap.js```. The Bootstrap docs for popovers and tooltips state that these modules have impact on performance, so make sure to deactivate if you don't need them.
-
-### The _data files
-```
-src/_data
-├── env.js
-├── layout.json
-├── menus.json
-└── site.json
+```shell
+npm run build
 ```
 
-#### env.js
-This contains the expression ```isDev``` to determine if NODE_ENV is 'development'. It's used to include sourcemaps in development mode and leave them out for a production build.
+Now, your blog is ready to be deployed. All generated files are located at
+`dist` folder, which you can deploy the folder to any hosting service you
+prefer.
 
-#### layout.json
-Applies the default layout for all pages (unless otherwise specified).
+### Deploy to Netlify
 
-#### menus.json
-As I didn't want to include too much stuff like the [11ty navigation plugin](https://www.11ty.dev/docs/plugins/navigation/), you can use this file to build navigation menus the manual way. Of course, feel free to use the plugin!
+Clone this repository on own GitHub account and deploy to Netlify:
 
-Don't forget to add a trailing slash to the URLs (at least to your internal ones)! This is important to be able to show the current active page. 11ty's ```{{ page.url }}``` **does** add a trailing slash and if you don't, the comparison will fail.
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Astro-boilerplate)
 
-#### site.json
-Contains the default metadata, site name and language.
+## 🧞 Commands
 
-## That's it!
-Now go and create something awesome!
+All commands are run from the root of the project, from a terminal:
+
+| Command           | Action                                       |
+|:----------------  |:-------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+| `npm run clean`   | Remove `./dist` folder                       |
+| `npm run lint`    | Run ESLint and report styling error          |
+
+### Contributions
+
+Everyone is welcome to contribute to this project.
+Feel free to open an issue if you have question or found a bug.
+
+### Additional Checks
+
+This README.md was linted with
+[markdownlint](https://github.com/igorshubovych/markdownlint-cli)
+
+### License
+
+Licensed under the MIT License, Copyright © 2022
+
+---
+
+Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)

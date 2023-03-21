@@ -1,8 +1,0 @@
-<nav class="nav nav-masthead justify-content-center float-md-end">
-      {% for item in menus.main %}
-         <a href="{{ item.url }}"
-         {% if page.url == item.url %} class="nav-link active" aria-current="page"
-         {% else %} class="nav-link"
-         {% endif %}>{{ item.name }}</a>
-      {% endfor %}
-</nav>
